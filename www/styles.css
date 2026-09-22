@@ -1,0 +1,113 @@
+/* Kleuren */
+:root {
+  --ink: #211a15;
+  --paper: #f3ead8;
+  --plum: #5c2334;
+}
+
+/* Basis */
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--ink);
+  margin-right: 20px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero .actions a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--plum);
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Genre balk */
+.genre-rail {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.genre-pill {
+  padding: 8px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.genre-pill.active {
+  background: var(--ink);
+  color: white;
+}
+
+/* Album grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.card-art {
+  background: var(--plum);
+  height: 180px;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  color: white;
+}
+
+.card-meta {
+  margin-top: 10px;
+}
+
+.price {
+  color: var(--plum);
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: var(--ink);
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
